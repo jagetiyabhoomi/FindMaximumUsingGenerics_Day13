@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GenericsDemo
 {
-    public class FindMaximum
+    public class FindMaximum<T> where T : IComparable
     {
-        public void MaximumIntNumber(string FV, string SV, string TV)
+        public void MaximumIntNumber(T FV, T SV, T TV)
         {
             if(FV.CompareTo(SV) > 0 && FV.CompareTo(TV)>0 || FV.CompareTo(SV) >= 0 && FV.CompareTo(TV) > 0 || FV.CompareTo(SV)>0 && FV.CompareTo(TV) >= 0)
             {
@@ -29,7 +29,7 @@ namespace GenericsDemo
             else
             {
                 Console.WriteLine("enter Valid Numbers");
-                //return null;
+                
             }
         }
     }
