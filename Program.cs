@@ -14,8 +14,13 @@ namespace GenericsDemo
            
             //float a = 10, b = 20, c = 40;
            // string MaximumNumberTestCase1, MaximumNumberTestCase2, MaximumNumberTestCase3;
-            FindMaximum findMaximum = new FindMaximum();
-            findMaximum.MaximumIntNumber("Banana", "Apple", "Peach");
+            FindMaximum<int> findMaximum = new FindMaximum<int>();
+            findMaximum.MaximumIntNumber(200,80,40);
+            FindMaximum<double> findMaximumdouble = new FindMaximum<double>();
+            findMaximumdouble.MaximumIntNumber(2.4, 8.3, 4.7);
+            FindMaximum<String> findMaximumstring = new FindMaximum<string>();
+            findMaximumstring.MaximumIntNumber("Bhumi", "Bhoomi", "Bhumiiiii");
+
             //Console.WriteLine(MaximumNumberTestCase1);
             //FindMaximum findMaximum2 = new FindMaximum();
             //findMaximum2.MaximumIntNumber("Apple", "Banana", "Peach");
