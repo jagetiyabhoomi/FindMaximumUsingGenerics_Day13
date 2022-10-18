@@ -8,7 +8,7 @@ namespace GenericsDemo
 {
     public class FindMaximum
     {
-        public int MaximumIntNumber(int FV, int SV, int TV)
+        public double MaximumIntNumber(double FV, double SV, double TV)
         {
             if(FV.CompareTo(SV) > 0 && FV.CompareTo(TV)>0 || FV.CompareTo(SV) >= 0 && FV.CompareTo(TV) > 0 || FV.CompareTo(SV)>0 && FV.CompareTo(TV) >= 0)
             {
