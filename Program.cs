@@ -28,8 +28,13 @@ namespace GenericsDemo
             //FindMaximum findMaximum3 = new FindMaximum();
             //findMaximum3.MaximumIntNumber("Apple", "Peach", "Banana");
             //Console.WriteLine(MaximumNumberTestCase3);
-            findMaximum.FindMaxExtended(5);
-
+            int[] array = new int[] { 45, 89, 2, 56, 67, 21 };
+            findMaximum.FindMaxExtended(array);
+            Console.WriteLine("Sorted Array:");
+            foreach (int i in array)
+            {
+                Console.WriteLine(i+" ");
+            }
         }
     }
 }
