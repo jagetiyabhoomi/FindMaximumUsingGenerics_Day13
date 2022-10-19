@@ -33,19 +33,10 @@ namespace GenericsDemo
 
             }
         }
-        public  void FindMaxExtended(int n)
-        {
-
-            int[] array = new int[n];
-            Console.WriteLine("Enter the elements: ");
-            for(int i = 0; i < n; i++)
-            {
-                array[i] = Convert.ToInt32(Console.ReadLine());
-            }
+        public  void FindMaxExtended(T[] array)
+        {            
             Array.Sort(array);
-            Console.WriteLine("Maximum Number from entered elements is: " + array[n-1]);
-
-
+            
         }
          
 
